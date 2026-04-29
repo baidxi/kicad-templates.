@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "c67f828b-18a5-4dea-9022-e222a7d410ef")
 	(paper "A4")
 	(lib_symbols
@@ -9,8 +9,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 3.81 19.304 0)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "A"
+				(at -14.224 16.764 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -18,61 +22,73 @@
 				)
 			)
 			(property "Value" "Flipper_Zero"
-				(at -4.318 19.304 0)
+				(at 8.89 16.764 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at -13.97 13.97 0)
+			(property "Footprint" "Module:Flipper_Zero_Angled"
+				(at 0 -25.654 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://docs.flipper.net/development"
-				(at 1.016 22.606 0)
+				(at 0 -23.368 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body"
-				(at -4.064 -21.082 0)
+			(property "Description" "Portable multi-tool for pentesters and geeks in a toy-like body, 13 GPIO, USB to UART/SPI/I2C bridge/converter, Serial Wire Debug interface (SWD), 2.54 mm pin header connector"
+				(at 0 -21.082 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Flipper Zero  Microcontroller Module STM32  USB"
+			(property "ki_keywords" "Microcontroller Module STM32 NFC RFID IR RF Bluetooth-LE-5.4 1-Wire ADC SMBus"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*Flipper?Zero*Straight* *Flipper?Zero*Angled*"
+			(property "ki_fp_filters" "*Flipper?Zero*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Flipper_Zero_0_0"
 				(pin power_out line
-					(at 12.7 15.24 180)
+					(at 17.78 12.7 180)
 					(length 2.54)
 					(name "5V"
 						(effects
@@ -90,7 +106,7 @@
 					)
 				)
 				(pin power_out line
-					(at 12.7 12.7 180)
+					(at 17.78 10.16 180)
 					(length 2.54)
 					(name "3.3V"
 						(effects
@@ -110,200 +126,9 @@
 			)
 			(symbol "Flipper_Zero_1_0"
 				(pin bidirectional line
-					(at -12.7 0 0)
+					(at -17.78 7.62 0)
 					(length 2.54)
-					(name "PA14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "EXTI.14" input line)
-					(alternate "LPTIM1.OUT" output line)
-					(alternate "SWCLK" input line)
-				)
-				(pin passive line
-					(at 0 -20.32 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "PA13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "EXTI.13" input line)
-					(alternate "SWDIO" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "PB6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "COMP2.IN+" input line)
-					(alternate "EXTI.6" input line)
-					(alternate "LPTIM1.ETR" bidirectional line)
-					(alternate "MCO" bidirectional line)
-					(alternate "USART1.TX" output line)
-				)
-				(pin bidirectional line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "PB7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "COMP2.IN2" input line)
-					(alternate "EXTI.7" input line)
-					(alternate "LPTIM1.IN2" input line)
-					(alternate "TIM1.MKIN" input line)
-					(alternate "USART1.RX" input line)
-				)
-				(pin bidirectional line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "PC1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1.2" input line)
-					(alternate "EXTI.1" input line)
-					(alternate "I2C3.SDA" bidirectional line)
-					(alternate "LPTIM1.OUT" output line)
-					(alternate "LPUART1.TX" output line)
-				)
-				(pin bidirectional line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "PC0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "EXTI.0" input line)
-					(alternate "I2C3.SCL" output line)
-					(alternate "LPTIM1.IN" input line)
-					(alternate "LPTIM2.IN" input line)
-					(alternate "LPUART1.RX" input line)
-				)
-				(pin bidirectional line
-					(at -12.7 -15.24 0)
-					(length 2.54)
-					(name "PB14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "EXTI.14" input line)
-					(alternate "I2C3.SDA" bidirectional line)
-					(alternate "TIM1.2N" bidirectional line)
-					(alternate "iButton" bidirectional line)
-				)
-				(pin passive line
-					(at 0 -20.32 90)
-					(length 2.54) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 15.24 0)
-					(length 2.54)
-					(name "PA7"
+					(name "SPI1.MOSI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -317,17 +142,18 @@
 							)
 						)
 					)
-					(alternate "ADC12" input line)
-					(alternate "COMP2 OUT" output line)
-					(alternate "EXTI 7" input line)
-					(alternate "SPI.MOSI" output line)
-					(alternate "TIM1.1N" bidirectional line)
+					(alternate "ADC1.12" input line)
+					(alternate "COMP2.OUT" output line)
+					(alternate "EXTI.7" input line)
+					(alternate "I2C3.SCL" bidirectional line)
+					(alternate "PA7" bidirectional line)
+					(alternate "TIM1.1N" output line)
 					(alternate "TIM17.1" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -12.7 12.7 0)
+					(at -17.78 10.16 0)
 					(length 2.54)
-					(name "PA6"
+					(name "SPI1.MISO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -342,16 +168,16 @@
 						)
 					)
 					(alternate "ADC1.11" input line)
-					(alternate "EXTI 6" input line)
-					(alternate "LPUART.CTS" output line)
-					(alternate "SPI1.MISO" input line)
-					(alternate "TIM1.BKIN" bidirectional line)
+					(alternate "EXTI.6" input line)
+					(alternate "LPUART1.CTS" input line)
+					(alternate "PA6" bidirectional line)
+					(alternate "TIM1.BKIN" input line)
 					(alternate "TIM16.1" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -12.7 10.16 0)
+					(at -17.78 12.7 0)
 					(length 2.54)
-					(name "PA4"
+					(name "~{SPI1.CS}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -368,14 +194,14 @@
 					(alternate "ADC1.9" input line)
 					(alternate "COMP1.IN-" input line)
 					(alternate "COMP2.IN-" input line)
-					(alternate "EXTI 4" input line)
+					(alternate "EXTI.4" input line)
 					(alternate "LPTIM2.OUT" output line)
-					(alternate "SPI.CS" bidirectional line)
+					(alternate "PA4" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -12.7 7.62 0)
+					(at -17.78 5.08 0)
 					(length 2.54)
-					(name "PB3"
+					(name "SPI1.SCK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -390,16 +216,16 @@
 						)
 					)
 					(alternate "COMP2.IN-" input line)
-					(alternate "EXTI 3" input line)
-					(alternate "SPI1.SCK" output line)
+					(alternate "EXTI.3" input line)
+					(alternate "PB3" bidirectional line)
 					(alternate "SWO" output line)
 					(alternate "TIM2.2" bidirectional line)
 					(alternate "USART1.DE/RTS" output line)
 				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
+				(pin open_collector line
+					(at -17.78 0 0)
 					(length 2.54)
-					(name "PB2"
+					(name "~{I2C3.SMBA}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -415,12 +241,12 @@
 					)
 					(alternate "COMP1.IN+" input line)
 					(alternate "EXTI.2" input line)
-					(alternate "I2C3.SMBA" bidirectional line)
 					(alternate "LPTIM1.OUT" output line)
-					(alternate "SPI1.CS" bidirectional line)
+					(alternate "PB2" bidirectional line)
+					(alternate "~{SPI1.CS}" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -12.7 2.54 0)
+					(at -17.78 -10.16 0)
 					(length 2.54)
 					(name "PC3"
 						(effects
@@ -438,11 +264,11 @@
 					)
 					(alternate "ADC1.4" input line)
 					(alternate "EXTI.3" input line)
-					(alternate "LPTIM1.ETR" bidirectional line)
-					(alternate "LPTIM2.ETR" bidirectional line)
+					(alternate "LPTIM1.ETR" input line)
+					(alternate "LPTIM2.ETR" input line)
 				)
 				(pin power_in line
-					(at 0 -20.32 90)
+					(at 0 -15.24 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -459,11 +285,205 @@
 						)
 					)
 				)
+				(pin output line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "EXTI.14" input line)
+					(alternate "LPTIM1.OUT" output line)
+					(alternate "PA14" bidirectional line)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -2.54 180)
+					(length 2.54)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "EXTI.13" input line)
+					(alternate "PA13" bidirectional line)
+				)
+				(pin output line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "USART1.TX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "COMP2.IN+" input line)
+					(alternate "EXTI.6" input line)
+					(alternate "LPTIM1.ETR" input line)
+					(alternate "MCO" output line)
+					(alternate "PB6" bidirectional line)
+				)
+				(pin input line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "USART1.RX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "COMP2.IN-" input line)
+					(alternate "EXTI.7" input line)
+					(alternate "LPTIM1.IN2" input line)
+					(alternate "PB7" bidirectional line)
+					(alternate "TIM1.BKIN" input line)
+				)
+				(pin bidirectional line
+					(at -17.78 -2.54 0)
+					(length 2.54)
+					(name "I2C3.SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1.2" input line)
+					(alternate "EXTI.1" input line)
+					(alternate "LPTIM1.OUT" output line)
+					(alternate "LPUART1.TX" output line)
+					(alternate "PC1" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "I2C3.SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1.1" bidirectional line)
+					(alternate "EXTI.0" input line)
+					(alternate "LPTIM1.IN1" input line)
+					(alternate "LPTIM2.IN1" input line)
+					(alternate "LPUART1.RX" input line)
+					(alternate "PC0" bidirectional line)
+				)
+				(pin bidirectional line
+					(at 17.78 -10.16 180)
+					(length 2.54)
+					(name "1W(iBTN)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "EXTI.14" input line)
+					(alternate "I2C3.SDA" bidirectional line)
+					(alternate "PB14" bidirectional line)
+					(alternate "TIM1.2N" output line)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(symbol "Flipper_Zero_1_1"
 				(rectangle
-					(start -10.16 17.78)
-					(end 10.16 -17.78)
+					(start -15.24 15.24)
+					(end 15.24 -12.7)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -473,26 +493,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+3.3V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -501,38 +532,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+3.3V_0_1"
@@ -550,7 +589,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -562,7 +601,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -577,7 +616,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -593,26 +632,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+5V"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -621,38 +671,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+5V_0_1"
@@ -670,7 +728,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -682,7 +740,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -697,7 +755,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -713,26 +771,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -741,38 +810,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -793,7 +870,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -809,185 +886,76 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(wire
 		(pts
-			(xy 157.48 69.85) (xy 157.48 74.93)
+			(xy 167.64 81.28) (xy 167.64 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b1f0747-ca6d-448d-87f3-392146e444fa")
+		(uuid "32d3df35-7427-4f65-9e0f-4c8795d052c6")
 	)
 	(wire
 		(pts
-			(xy 157.48 74.93) (xy 154.94 74.93)
+			(xy 167.64 85.09) (xy 163.83 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "307a3005-4caa-44dd-af8e-561d759d9195")
+		(uuid "40f5ed0b-e07d-41ec-b5b5-df514d34e96c")
 	)
 	(wire
 		(pts
-			(xy 163.83 77.47) (xy 163.83 69.85)
+			(xy 173.99 87.63) (xy 173.99 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "34375385-a7f4-4f46-9894-908bbbfa3696")
+		(uuid "bbe93a72-2e0f-49e9-a724-ced611d88645")
 	)
 	(wire
 		(pts
-			(xy 154.94 77.47) (xy 163.83 77.47)
+			(xy 163.83 87.63) (xy 173.99 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0ffe2ee-827e-4358-87bd-c4c5c629aeea")
-	)
-	(symbol
-		(lib_id "MCU_Module:Flipper_Zero")
-		(at 142.24 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7dfe8e5a-18bb-4c5d-807d-9ec9244042ac")
-		(property "Reference" "J1"
-			(at 142.24 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Flipper_Zero"
-			(at 142.24 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Module:Flipper_Zero_Angled"
-			(at 128.27 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://docs.flipper.net/development"
-			(at 143.256 67.564 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body"
-			(at 138.176 111.252 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "c1bb56c7-e6ec-4dc0-8a47-bc351b530f48")
-		)
-		(pin "7"
-			(uuid "9532e345-a993-440c-a944-4dc5b9bb4566")
-		)
-		(pin "5"
-			(uuid "d7940e99-7167-4624-9f08-2a3f0082bb5e")
-		)
-		(pin "18"
-			(uuid "19f38f9c-0093-4feb-b804-907508559650")
-		)
-		(pin "17"
-			(uuid "15e05dfa-db11-4232-aaab-f7acf825b5cf")
-		)
-		(pin "4"
-			(uuid "5a793549-b961-404a-a04c-5095d08a0374")
-		)
-		(pin "8"
-			(uuid "1c53bb14-f792-4664-b850-60fae592e104")
-		)
-		(pin "2"
-			(uuid "a0940729-92eb-4002-acb3-bf5556cf75ae")
-		)
-		(pin "3"
-			(uuid "83d77d1a-7878-4846-81f4-fcdbb926ccf3")
-		)
-		(pin "10"
-			(uuid "0851a6c6-0857-45ef-86a1-a20b2b67e908")
-		)
-		(pin "13"
-			(uuid "a645a015-a591-46c7-9e77-9860570d53e2")
-		)
-		(pin "15"
-			(uuid "a75dd3b1-cc2a-4e38-b563-31573885d850")
-		)
-		(pin "1"
-			(uuid "4b2e8e0f-9c4d-4c53-8f6d-29af1b3a0412")
-		)
-		(pin "11"
-			(uuid "eaebd6f8-3b79-4ca7-9914-5a95825fdc0d")
-		)
-		(pin "14"
-			(uuid "a7a7ab79-cc1e-4659-a54e-eb7bfac1b7e3")
-		)
-		(pin "9"
-			(uuid "eda59113-4fb4-464e-b6db-5c1f7286f6af")
-		)
-		(pin "6"
-			(uuid "15c1c74a-8f98-4174-b2c4-f818ba445912")
-		)
-		(pin "16"
-			(uuid "ebfe3eb7-01c7-4efc-bb11-65bec11a420a")
-		)
-		(instances
-			(project ""
-				(path "/c67f828b-18a5-4dea-9022-e222a7d410ef"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "ff9951bd-46a5-456b-8b81-abfb368550b7")
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 110.49 0)
+		(at 146.05 113.03 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b4c645a3-8905-4533-b8c2-25b9412685ba")
+		(uuid "19089556-1d79-4045-a9e2-80a8bb9ef382")
 		(property "Reference" "#PWR01"
-			(at 142.24 116.84 0)
+			(at 146.05 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 115.57 0)
+			(at 146.05 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,37 +963,43 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 110.49 0)
+			(at 146.05 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 110.49 0)
+			(at 146.05 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 110.49 0)
+			(at 146.05 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "dd2269fa-f8a1-4469-aee4-bd6599cb018c")
+			(uuid "d24b6c70-edd7-4afb-b9ea-52e437020192")
 		)
 		(instances
-			(project ""
+			(project "Flipper_Zero_Regular_External_Module"
 				(path "/c67f828b-18a5-4dea-9022-e222a7d410ef"
 					(reference "#PWR01")
 					(unit 1)
@@ -1035,25 +1009,31 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 163.83 69.85 0)
+		(at 173.99 81.28 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d0e1318f-2a1e-4ede-9c93-2ffbeb9c7fd3")
-		(property "Reference" "#PWR03"
-			(at 163.83 73.66 0)
+		(uuid "2fedbf45-fbd5-42c3-86bd-3da791709ca1")
+		(property "Reference" "#PWR02"
+			(at 173.99 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 163.83 64.77 0)
+			(at 173.99 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1061,39 +1041,173 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 69.85 0)
+			(at 173.99 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 69.85 0)
+			(at 173.99 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 163.83 69.85 0)
+			(at 173.99 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "7d755f54-db2c-466a-9d1a-476a96dcd32e")
+			(uuid "bd811317-c6e9-4c8d-ae94-251f8d443bfa")
 		)
 		(instances
-			(project ""
+			(project "Flipper_Zero_Regular_External_Module"
 				(path "/c67f828b-18a5-4dea-9022-e222a7d410ef"
-					(reference "#PWR03")
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_Module:Flipper_Zero")
+		(at 146.05 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8a1fd02-2fcc-4ddc-8ac7-870396cba157")
+		(property "Reference" "A1"
+			(at 146.05 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Flipper_Zero"
+			(at 146.05 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:Flipper_Zero_Angled"
+			(at 146.05 123.444 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://docs.flipper.net/development"
+			(at 146.05 121.158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Portable multi-tool for pentesters and geeks in a toy-like body, 13 GPIO, USB to UART/SPI/I2C bridge/converter, Serial Wire Debug interface (SWD), 2.54 mm pin header connector"
+			(at 146.05 118.872 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "15"
+			(uuid "20205eef-3b7f-4508-9875-48485e2bb7d1")
+		)
+		(pin "10"
+			(uuid "d1322370-88d7-4de5-9ee4-52af0ac39d4e")
+		)
+		(pin "11"
+			(uuid "296f34b4-bdbb-406c-a688-a57fd4d9b1f4")
+		)
+		(pin "13"
+			(uuid "171b8680-78d7-4900-82ba-0d095e5963b0")
+		)
+		(pin "7"
+			(uuid "98243557-e35e-487c-ad62-662758bcd548")
+		)
+		(pin "12"
+			(uuid "374d8513-c8f0-40e5-8def-0a4db2ead2b9")
+		)
+		(pin "8"
+			(uuid "40415a12-be81-4980-90ba-a63a973f7c51")
+		)
+		(pin "16"
+			(uuid "27ee653b-97d3-4044-8410-a0787dec4c81")
+		)
+		(pin "5"
+			(uuid "c167edd1-a923-41b1-bf91-82d9ac4b3d30")
+		)
+		(pin "14"
+			(uuid "0821488a-dfd1-415e-b0fa-2d985498d294")
+		)
+		(pin "17"
+			(uuid "313de406-5e73-45f9-a8bd-5a3e3130e099")
+		)
+		(pin "18"
+			(uuid "b0a1e7a3-bc4c-454d-a7ed-d2d2fe865b15")
+		)
+		(pin "9"
+			(uuid "287dc1b3-069c-4be0-9d3f-b1c447c7a77c")
+		)
+		(pin "1"
+			(uuid "454922a4-27bd-413f-a380-0f7777c761ba")
+		)
+		(pin "6"
+			(uuid "7be05300-1c06-4c0f-afd7-ba9ad3284984")
+		)
+		(pin "4"
+			(uuid "30e49cea-422f-4d68-b28e-e01f54ef5e40")
+		)
+		(pin "3"
+			(uuid "045c4ef6-5616-451b-96e9-d6e3e20cfc31")
+		)
+		(pin "2"
+			(uuid "3f16ecd4-1b63-4670-ad17-78f14c023bdd")
+		)
+		(instances
+			(project "Flipper_Zero_Regular_External_Module"
+				(path "/c67f828b-18a5-4dea-9022-e222a7d410ef"
+					(reference "A1")
 					(unit 1)
 				)
 			)
@@ -1101,25 +1215,31 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 157.48 69.85 0)
+		(at 167.64 81.28 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fd8dcc06-7b60-4f5d-b38a-cf9ab2d7031b")
-		(property "Reference" "#PWR02"
-			(at 157.48 73.66 0)
+		(uuid "c79a758e-b395-478d-b49f-456ba7127230")
+		(property "Reference" "#PWR03"
+			(at 167.64 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+5V"
-			(at 157.48 64.77 0)
+			(at 167.64 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1127,39 +1247,45 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 69.85 0)
+			(at 167.64 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 69.85 0)
+			(at 167.64 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 157.48 69.85 0)
+			(at 167.64 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "aa4a97c3-5898-4fbc-b1d6-4d7e8a3ab8e9")
+			(uuid "9d72a1a9-f491-4196-8420-ea50342ed510")
 		)
 		(instances
-			(project ""
+			(project "Flipper_Zero_Regular_External_Module"
 				(path "/c67f828b-18a5-4dea-9022-e222a7d410ef"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1170,4 +1296,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
